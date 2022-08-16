@@ -24,6 +24,7 @@ body{
     color:white;
     padding:2.2rem;
     border-radius:10px;
+    box-shadow: 2px 2px 5px 5px rgba(0,0,0,0.3);
 }
 .main_section h1{
     font-size:2rem;
@@ -42,11 +43,25 @@ body{
     flex-direction: column;
     justify-content: space-between;
 }
+label{
+    letter-spacing: -2px;
+}
+label span
+{
+    font-size:18px;
+    display:inline-block;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
 input:not([type="submit"])
 {
     background-color:transparent;
     border:none;
-    border-bottom:2px solid white
+    border-bottom:2px solid white;
+    padding:10px;
+    padding-left:0;
+    position:relative;
+    bottom:1.5rem;
+    color:white;
 }
 input:not([type="submit"]):focus-visible
 {
@@ -56,9 +71,10 @@ input:not([type="submit"]):focus-visible
 input[type="submit"]
 {
     background-color:lightblue;
-    padding:0.8rem 2rem;
+    padding:1rem 2rem;
     border-radius:5px;
     border:none;
+    cursor:pointer;
 }
 .account_text{
     align-self: flex-start;
@@ -69,5 +85,21 @@ input[type="submit"]
 .account_text a{
     display: inline;
     margin-left:5px;
-    color:lightblue
+    color:lightblue;
+    cursor:pointer;
+}
+.change{
+    transform:translateY(-15px);
+    color: lightblue;
+}
+.input_border
+{
+    border-color:lightblue;
+}
+
+@media (max-width:25rem)
+{
+    .main_section{
+        width:300px;
+    }
 }
