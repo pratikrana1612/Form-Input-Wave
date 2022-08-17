@@ -94,7 +94,7 @@ input[type="submit"]
 }
 .input_border
 {
-    border-color:lightblue;
+    border-color:lightblue !important;
 }
 
 @media (max-width:25rem)
